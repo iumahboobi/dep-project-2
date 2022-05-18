@@ -1,0 +1,51 @@
+main {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+li {
+  margin: 10px;
+}
+
+/* Mobile Version */
+
+@media (max-width: 480px) {
+  body {
+    margin: 12px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  h1 {
+    background-color: antiquewhite;
+  }
+  ol {
+    background-color: antiquewhite;
+  }
+}
+/*Table Version*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    margin: 22px;
+    font-size: clamp (12px, 5vh, 28px);
+    padding: 22px;
+    color: brown;
+  }
+  ol li {
+    column-count: 4;
+  }
+}
+/* Desktop Version*/
+@media (min-width: 1280px) {
+  body {
+    margin: 22px;
+    font-size: clamp (22px, 5vh, 38px);
+    padding: 22px;
+    color: rgb(22, 7, 7);
+    background-color: rgb(19, 95, 131);
+  }
+  li::first-letter {
+    color: aliceblue;
+    font-size: 24px;
+  }
+}
